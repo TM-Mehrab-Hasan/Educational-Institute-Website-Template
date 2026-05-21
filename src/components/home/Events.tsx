@@ -111,9 +111,9 @@ export default function Events() {
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
                   className="text-xs font-black text-text-main uppercase tracking-tighter hover:text-brand-primary transition-colors flex items-center gap-2 rounded"
-                  aria-label={`Add ${event.title} to Google Calendar`}
+                  aria-label={t('home.add_to_calendar')}
                 >
-                  Add to Google Calendar <ExternalLink size={12} />
+                  {t('home.add_to_calendar')} <ExternalLink size={12} />
                 </a>
               </div>
             </div>

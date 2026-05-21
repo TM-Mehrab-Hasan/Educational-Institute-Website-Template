@@ -131,8 +131,8 @@ export default function NoticeBoard() {
                       <FileText size={20} className="text-brand-primary" />
                     </div>
                     <div className="h-px w-32 bg-gradient-to-r from-transparent via-brand-primary to-transparent mb-3"></div>
-                    <p className="text-[10px] font-black uppercase tracking-[0.4em] text-brand-primary">End of Recent Updates</p>
-                    <p className="text-[8px] font-bold uppercase tracking-widest text-text-muted mt-1 italic">Repeating Scroller</p>
+                    <p className="text-[10px] font-black uppercase tracking-[0.4em] text-brand-primary">{t('home.end_of_updates')}</p>
+                    <p className="text-[8px] font-bold uppercase tracking-widest text-text-muted mt-1 italic">{t('home.repeating_scroller')}</p>
                   </div>
                 )}
               </React.Fragment>

@@ -298,7 +298,7 @@ export default function Home() {
             <div className="mt-20 pt-20 border-t border-brand-primary/10">
               <div className="flex items-center gap-4 mb-12 justify-center">
                 <div className="h-px bg-brand-primary/10 flex-grow max-w-[100px]"></div>
-                <h3 className="text-sm font-black text-brand-primary uppercase tracking-[0.3em] text-center">Community Submissions</h3>
+                <h3 className="text-sm font-black text-brand-primary uppercase tracking-[0.3em] text-center">{t('home.community_reviews')}</h3>
                 <div className="h-px bg-brand-primary/10 flex-grow max-w-[100px]"></div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

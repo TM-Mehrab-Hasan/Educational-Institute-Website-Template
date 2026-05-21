@@ -302,12 +302,18 @@
   },
   "home": {
     "academic_calendar": "একাডেমিক ক্যালেন্ডার",
+    "add_to_calendar": "গুগল ক্যালেন্ডারে যোগ করুন",
+    "archive": "সম্পূর্ণ আর্কাইভ",
     "class_routines": "ক্লাস রুটিন",
+    "community_reviews": "অভিভাবকদের মতামত",
     "download_syllabus": "কারিকুলাম ডাউনলোড",
+    "end_of_updates": "সাম্প্রতিক আপডেট শেষ",
     "exam_schedules": "পরীক্ষার সূচী",
     "join_community": "আমাদের কমিউনিটিতে যোগ দিন",
+    "no_recent_updates": "কোনো সাম্প্রতিক আপডেট নেই",
     "payment_gateway": "পেমেন্ট গেটওয়ে",
     "quick_access": "কুইক অ্যাক্সেস",
+    "repeating_scroller": "পুনরাবৃত্তি স্ক্রলার",
     "student_portal": "স্টুডেন্ট পোর্টাল লগইন",
     "ticker": {
       "notice1": "২০২৬-২৭ শিক্ষাবর্ষের একাদশ শ্রেণীর অনলাইন ভর্তি ১৫ মে পর্যন্ত চলবে।",

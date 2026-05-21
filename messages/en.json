@@ -301,12 +301,18 @@
   },
   "home": {
     "academic_calendar": "Academic Calendar",
+    "add_to_calendar": "Add to Google Calendar",
+    "archive": "Full Archive",
     "class_routines": "Class Routines",
+    "community_reviews": "Community Submissions",
     "download_syllabus": "Download Curriculum",
+    "end_of_updates": "End of Recent Updates",
     "exam_schedules": "Exam Schedules",
     "join_community": "Join Our Community",
+    "no_recent_updates": "No recent updates",
     "payment_gateway": "Payment Gateway",
     "quick_access": "Quick Access",
+    "repeating_scroller": "Repeating Scroller",
     "student_portal": "Student Portal Login",
     "ticker": {
       "notice1": "Online admission for Class XI (Session 2026-27) will continue until May 15.",
