@@ -65,7 +65,7 @@ export default async function RootLayout({
         className="min-h-full flex flex-col bg-gray-50 text-gray-900"
         suppressHydrationWarning
       >
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <LanguageProvider>
             <NoticesProvider>
               <GuardianAuthProvider>
