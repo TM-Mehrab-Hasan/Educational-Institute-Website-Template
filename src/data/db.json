@@ -1,0 +1,112 @@
+{
+  "notices": [
+    {
+      "id": 1,
+      "date": "25 Apr 2026",
+      "isUrgent": true,
+      "category": {
+        "en": "Admission",
+        "bn": "ভর্তি"
+      },
+      "title": {
+        "en": "Class XI Online Admission Guidelines for Session 2026-27",
+        "bn": "২০২৬-২৭ সেশনের একাদশ শ্রেণীর অনলাইন ভর্তি নির্দেশিকা"
+      },
+      "content": {
+        "en": "<h3>Admission Guidelines</h3><p>Dear Applicants and Parents,</p><p>We are pleased to announce the commencement of the Class XI Online Admission process. Please follow the instructions below:</p><ul><li>Registration starts: May 01, 2026</li><li>Last date of application: May 25, 2026</li><li>Selection list publication: June 05, 2026</li></ul><p>Required Documents:</p><ul><li>SSC Marksheet from respective school</li><li>Passport size photographs</li><li>Birth Certificate</li></ul>",
+        "bn": "<h3>ভর্তি নির্দেশিকা</h3><p>প্রিয় আবেদনকারী ও অভিভাবকবৃন্দ,</p><p>আমরা অত্যন্ত আনন্দের সাথে জানাচ্ছি যে একাদশ শ্রেণীর অনলাইন ভর্তি প্রক্রিয়া শুরু হয়েছে। অনুগ্রহ করে নিচের নির্দেশনাগুলো অনুসরণ করুন:</p><ul><li>নিবন্ধন শুরু: ০১ মে, ২০২৬</li><li>আবেদনের শেষ তারিখ: ২৫ মে, ২০২৬</li><li>নির্বাচিত তালিকা প্রকাশ: ০৫ জুন, ২০২৬</li></ul>"
+      }
+    },
+    {
+      "id": 2,
+      "date": "22 Apr 2026",
+      "isUrgent": true,
+      "category": {
+        "en": "Examination",
+        "bn": "পরীক্ষা"
+      },
+      "title": {
+        "en": "SSC 2026 Test Examination Schedule and Seat Plan",
+        "bn": "এসএসসি ২০২৬ টেস্ট পরীক্ষার সময়সূচী এবং আসন পরিকল্পনা"
+      },
+      "content": {
+        "en": "<h3>Examination Notice</h3><p>The SSC 2026 Test Examination schedule has been finalized. Students are advised to collect their admit cards.</p><ul><li>Admit cards will be distributed from April 28</li><li>Exams start from May 05</li><li>No electronic devices allowed in the hall</li></ul>",
+        "bn": "<h3>পরীক্ষা সংক্রান্ত নোটিশ</h3><p>এসএসসি ২০২৬ টেস্ট পরীক্ষার সময়সূচী চূড়ান্ত করা হয়েছে। শিক্ষার্থীদের অ্যাডমিট কার্ড সংগ্রহ করতে বলা হচ্ছে।</p><ul><li>অ্যাডমিট কার্ড বিতরণ: ২৮ এপ্রিল থেকে</li><li>পরীক্ষা শুরু: ০৫ মে থেকে</li></ul>"
+      }
+    },
+    {
+      "id": 3,
+      "date": "20 Apr 2026",
+      "isUrgent": false,
+      "category": {
+        "en": "Sports",
+        "bn": "ক্রীড়া"
+      },
+      "title": {
+        "en": "Inter-College Sports Tournament 2026 Registration",
+        "bn": "আন্তঃকলেজ ক্রীড়া প্রতিযোগিতা ২০২৬ নিবন্ধন"
+      },
+      "content": {
+        "en": "<h3>Sports Registration</h3><p>Register for the upcoming sports tournament. Events include Football, Badminton, and Athletics.</p>",
+        "bn": "<h3>ক্রীড়া নিবন্ধন</h3><p>আসন্ন ক্রীড়া প্রতিযোগিতার জন্য নিবন্ধন করুন। ইভেন্টের মধ্যে রয়েছে ফুটবল, ব্যাডমিন্টন এবং অ্যাথলেটিক্স।</p>"
+      }
+    },
+    {
+      "id": 4,
+      "date": "18 Apr 2026",
+      "isUrgent": true,
+      "category": {
+        "en": "Academic",
+        "bn": "একাডেমিক"
+      },
+      "title": {
+        "en": "HSC 2025 Form Fill-up Notice for Regular Students",
+        "bn": "এইচএসসি ২০২৫ নিয়মিত শিক্ষার্থীদের জন্য ফরম পূরণ সংক্রান্ত নোটিশ"
+      },
+      "content": {
+        "en": "<h3>Academic Notice</h3><p>HSC 2025 form fill-up process has started. Deadline: April 30, 2026.</p>",
+        "bn": "<h3>একাডেমিক নোটিশ</h3><p>এইচএসসি ২০২৫ ফরম পূরণ প্রক্রিয়া শুরু হয়েছে। সময়সীমা: ৩০ এপ্রিল, ২০২৬।</p>"
+      }
+    }
+  ],
+  "mission": {
+    "en": "To empower students with a holistic education that blends academic rigor with ethical integrity, preparing them to lead with purpose in a global society. We strive to create an environment where brilliance meets social responsibility.",
+    "bn": "শিক্ষার্থীদের এমন একটি সামগ্রিক শিক্ষার মাধ্যমে ক্ষমতায়ন করা যা একাডেমিক কঠোরতার সাথে নৈতিক সততার সমন্বয় ঘটায়, যাতে তারা বিশ্ব সমাজে সুনির্দিষ্ট উদ্দেশ্য নিয়ে নেতৃত্ব দিতে পারে। আমরা এমন একটি পরিবেশ তৈরির চেষ্টা করি যেখানে মেধা এবং সামাজিক দায়বদ্ধতার মেলবন্ধন ঘটে।"
+  },
+  "vision": {
+    "en": "To be recognized as a center of excellence that nurtures intellectual curiosity, character development, and a lifelong passion for learning and innovation. We aim to set the benchmark for transformative education in Bangladesh.",
+    "bn": "একটি শ্রেষ্ঠত্ব কেন্দ্র হিসেবে স্বীকৃতি পাওয়া যা বুদ্ধিবৃত্তিক কৌতূহল, চরিত্র গঠন এবং শিক্ষা ও উদ্ভাবনের প্রতি আজীবন অনুরাগ লালন করে। আমাদের লক্ষ্য বাংলাদেশে রূপান্তরমূলক শিক্ষার মানদণ্ড স্থাপন করা।"
+  },
+  "principalMessage": {
+    "title": {
+      "en": "Principal's Message",
+      "bn": "অধ্যক্ষের বাণী"
+    },
+    "paragraphs": [
+      {
+        "en": "Welcome to Demo Model School & College. It is an honor to serve as the Principal of this institution, which has been a hub of academic excellence in Dhaka since 1995. Our goal has always been clear: to provide a nurturing environment where every student can achieve their full potential.",
+        "bn": "ডেমো মডেল স্কুল এন্ড কলেজে আপনাকে স্বাগতম। ১৯৯৫ সাল থেকে ঢাকায় একাডেমিক শ্রেষ্ঠত্বের কেন্দ্র হিসেবে পরিচিত এই প্রতিষ্ঠানের অধ্যক্ষ হিসেবে দায়িত্ব পালন করা আমার জন্য সম্মানের বিষয়। আমাদের লক্ষ্য সবসময় স্পষ্ট: প্রতিটি শিক্ষার্থী যাতে তাদের পূর্ণ সম্ভাবনা অর্জন করতে পারে এমন একটি অনুকূল পরিবেশ প্রদান করা।"
+      },
+      {
+        "en": "In today’s rapidly changing world, education must go beyond the traditional boundaries of textbooks. At Demo Model School & College, we emphasize \"holistic development.\" We combine a rigorous academic curriculum with a wide range of co-curricular activities to ensure our graduates are not just well-educated, but are well-rounded individuals ready to face global challenges.",
+        "bn": "আজকের দ্রুত পরিবর্তনশীল বিশ্বে শিক্ষাকে পাঠ্যপুস্তকের প্রথাগত সীমানার বাইরে যেতে হবে। ডেমো মডেল স্কুল এন্ড কলেজে আমরা আমাদের শিক্ষার্থীদের \"সামগ্রিক বিকাশ\" এর ওপর জোর দিই। আমরা একটি কঠোর একাডেমিক পাঠ্যক্রমের সাথে বিভিন্ন ধরণের সহ-শিক্ষা কার্যক্রমের সমন্বয় করি, যাতে আমাদের গ্র্যাজুয়েটরা কেবল সুশিক্ষিতই নয়, বরং বৈশ্বিক চ্যালেঞ্জ মোকাবিলায় সক্ষম এক একজন আদর্শ মানুষ হিসেবে গড়ে ওঠে।"
+      },
+      {
+        "en": "Our state-of-the-art facilities, dedicated faculty, and technology-integrated classrooms provide the perfect setting for learning. Whether it is in the science lab, on the sports field, or in the debating hall, we encourage our students to be curious, to ask questions, and to dream big.",
+        "bn": "আমাদের অত্যাধুনিক সুযোগ-সুবিধা, নিবেদিতপ্রাণ শিক্ষক মন্ডলী এবং প্রযুক্তি-সমন্বিত ক্লাসরুম শেখার জন্য উপযুক্ত পরিবেশ প্রদান করে। বিজ্ঞান ল্যাব হোক, খেলার মাঠ হোক বা ডিবেটিং হল হোক, আমরা আমাদের শিক্ষার্থীদের কৌতূহলী হতে, প্রশ্ন করতে এবং বড় স্বপ্ন দেখতে উৎসাহিত করি।"
+      },
+      {
+        "en": "I invite you to explore our website and learn more about our college. To the parents, thank you for trusting us with your child’s future. To the students, remember that your journey at Demo Model School & College is just the beginning of a lifetime of success.",
+        "bn": "আমি আপনাকে আমাদের ওয়েবসাইটটি দেখার এবং আমাদের কলেজ সম্পর্কে আরও জানার জন্য আমন্ত্রণ জানাচ্ছি। অভিভাবকদের প্রতি কৃতজ্ঞতা প্রকাশ করছি আপনাদের সন্তানের ভবিষ্যতের জন্য আমাদের ওপর আস্থা রাখার জন্য। শিক্ষার্থীদের মনে রাখতে হবে যে, ডেমো মডেল স্কুল এন্ড কলেজে তোমাদের এই যাত্রা হলো আজীবন সাফল্যের শুরু মাত্র।"
+      }
+    ],
+    "quote": {
+      "en": "We do not just teach subjects; we instill values. Our aim is to create leaders who will lead with integrity, empathy, and innovation.",
+      "bn": "আমরা কেবল বিষয় পড়াই না; আমরা মূল্যবোধ জাগ্রত করি। আমাদের লক্ষ্য হলো এমন নেতা তৈরি করা যারা সততা, সহানুভূতি এবং উদ্ভাবনের সাথে নেতৃত্ব দেবে।"
+    }
+  },
+  "history": {
+    "en": "Demo Model School & College is a premier educational institution in Dhaka, Bangladesh, dedicated to providing a holistic learning experience that combines academic excellence with character development. Since our founding in 1995, we have been at the forefront of educational innovation, preparing students for the challenges of the 21st century.",
+    "bn": "ডেমো মডেল স্কুল এন্ড কলেজ ঢাকার একটি অন্যতম শিক্ষা প্রতিষ্ঠান, যা একাডেমিক শ্রেষ্ঠত্বের সাথে চরিত্র গঠনের সমন্বয়ে একটি সামগ্রিক শিক্ষার অভিজ্ঞতা প্রদানে নিবেদিত। ১৯৯৫ সালে প্রতিষ্ঠার পর থেকে আমরা শিক্ষা ক্ষেত্রে উদ্ভাবনের অগ্রভাগে রয়েছি, যা শিক্ষার্থীদের একবিংশ শতাব্দীর চ্যালেঞ্জের জন্য প্রস্তুত করে।"
+  }
+}

@@ -1,48 +1,51 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import Image from 'next/image';
 import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
 import { cn } from '@/lib/utils';
-
-const slides = [
-  {
-    id: 1,
-    title: "Nurturing the Leaders of Tomorrow",
-    subtitle: "A legacy of academic excellence and character building since 1995.",
-    image: "https://images.unsplash.com/photo-1523050853063-bd31406796a5?q=80&w=1600&auto=format&fit=crop",
-    ctaLabel: "Admissions 2026",
-    ctaLink: "/admission"
-  },
-  {
-    id: 2,
-    title: "Innovation in the Classroom",
-    subtitle: "State-of-the-art laboratories and digital learning environments.",
-    image: "https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1600&auto=format&fit=crop",
-    ctaLabel: "View Facilities",
-    ctaLink: "/about"
-  },
-  {
-    id: 3,
-    title: "Holistic Development",
-    subtitle: "Developing talent through sports, debate, and cultural enrichment.",
-    image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1600&auto=format&fit=crop",
-    ctaLabel: "Student Life",
-    ctaLink: "/gallery"
-  }
-];
+import { useLanguage } from '@/lib/LanguageContext';
 
 export default function Hero() {
   const [current, setCurrent] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
+  const { t } = useLanguage();
+
+  const slides = [
+    {
+      id: 1,
+      title: t('hero.slide1.title'),
+      subtitle: t('hero.slide1.subtitle'),
+      image: "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1600&auto=format&fit=crop",
+      ctaLabel: t('hero.slide1.cta'),
+      ctaLink: "/admission"
+    },
+    {
+      id: 2,
+      title: t('hero.slide2.title'),
+      subtitle: t('hero.slide2.subtitle'),
+      image: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1600&auto=format&fit=crop",
+      ctaLabel: t('hero.slide2.cta'),
+      ctaLink: "/about"
+    },
+    {
+      id: 3,
+      title: t('hero.slide3.title'),
+      subtitle: t('hero.slide3.subtitle'),
+      image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1600&auto=format&fit=crop",
+      ctaLabel: t('hero.slide3.cta'),
+      ctaLink: "/gallery"
+    }
+  ];
 
   const nextSlide = useCallback(() => {
     setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-  }, []);
+  }, [slides.length]);
 
   const prevSlide = useCallback(() => {
     setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  }, []);
+  }, [slides.length]);
 
   useEffect(() => {
     if (!isPlaying) return;
@@ -68,10 +71,13 @@ export default function Hero() {
           >
             {/* Overlay for readability */}
             <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-950/40 to-transparent z-10" />
-            <img
+            <Image
               src={slide.image}
-              alt="" // Decorational, title provides context
-              className="h-full w-full object-cover"
+              alt={slide.title}
+              fill
+              priority={index === 0}
+              sizes="100vw"
+              className="object-cover"
             />
             
             {/* Content Container */}
@@ -95,7 +101,7 @@ export default function Hero() {
                       href="/gallery"
                       className="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-md font-bold transition-all focus-ring text-center"
                     >
-                      Explore Campus
+                      {t('hero.explore')}
                     </Link>
                   </div>
                 </div>

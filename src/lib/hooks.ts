@@ -1,38 +1,56 @@
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 
 export function useScrollReveal() {
   const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
+  const [element, setElement] = useState<HTMLElement | null>(null);
+  const observerRef = useRef<IntersectionObserver | null>(null);
+
+  const ref = useCallback((node: HTMLElement | null) => {
+    if (node !== null) {
+      setElement(node);
+    }
+  }, []);
 
   useEffect(() => {
+    if (!element) return;
+
+    // Fallback for environments where IntersectionObserver is not available
+    if (!window.IntersectionObserver) {
+      setIsVisible(true);
+      return;
+    }
+
+    // Clean up previous observer
+    if (observerRef.current) {
+      observerRef.current.disconnect();
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Once it's visible, we can stop observing if we only want it to animate once
-          // observer.unobserve(entry.target);
-        } else {
-          setIsVisible(false); // Remove this if you only want it to reveal once
+          // Stop observing once visible to save resources
+          observer.unobserve(entry.target);
         }
       },
       {
-        threshold: 0.1, // Trigger when 10% of the element is visible
+        threshold: 0.05, // Lower threshold for better reliability
+        rootMargin: '50px', // Start revealing slightly before it enters the viewport
       }
     );
 
-    const currentRef = ref.current;
-    if (currentRef) {
-      observer.observe(currentRef);
-    }
+    observer.observe(element);
+    observerRef.current = observer;
 
     return () => {
-      if (currentRef) {
-        observer.unobserve(currentRef);
+      if (observerRef.current) {
+        observerRef.current.disconnect();
       }
     };
-  }, []);
+  }, [element]);
 
   return { ref, isVisible };
 }
+

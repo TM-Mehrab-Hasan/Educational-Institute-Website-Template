@@ -1,0 +1,645 @@
+{
+  "about": {
+    "achievements_desc": "Our journey of excellence through academic and co-curricular milestones.",
+    "address_text": "123 Academic Avenue, Dhanmondi, Dhaka-1209, Bangladesh",
+    "alumni_dept1": "BUET, CSE (2023)",
+    "alumni_dept2": "Dhaka Medical College (2022)",
+    "alumni_dept3": "University of Dhaka, IBA (2024)",
+    "alumni_name1": "Tanvir Ahmed",
+    "alumni_name2": "Nusrat Jahan",
+    "alumni_name3": "Rafid Hassan",
+    "alumni_quote1": "The foundation I received here was instrumental in my success at BUET.",
+    "alumni_quote2": "The rigorous science labs and faculty support made my medical dream possible.",
+    "alumni_quote3": "Co-curricular activities helped me develop the leadership skills needed for IBA.",
+    "contact_title": "Contact Us",
+    "curriculum_label": "Curriculum",
+    "curriculum_value": "National Curriculum (NCTB)",
+    "eiin_label": "EIIN",
+    "eiin_value": "123456",
+    "excellence_label": "Of Excellence",
+    "facilities_desc": "Discover our world-class campus and infrastructure.",
+    "faculty_label": "Expert Faculty",
+    "glance_title": "At a Glance",
+    "groups_label": "Groups",
+    "groups_value": "Science, Business Studies, Humanities",
+    "heritage": "Our Heritage",
+    "history_desc": "Explore our 28-year journey of academic success.",
+    "mission_desc": "Learn about our mission, vision, and core values.",
+    "nurturing": "Nurturing excellence and character in every student since our inception in 1995.",
+    "organogram_desc": "Visualizing the administrative hierarchy and organizational structure of the institution.",
+    "overview_text": "Demo Model School & College is a premier educational institution in Dhaka, Bangladesh, dedicated to providing a holistic learning experience that combines academic excellence with character development. Since our founding in 1995, we have been at the forefront of educational innovation, preparing students for the challenges of the 21st century.",
+    "overview_title": "Institutional Overview",
+    "placement_label": "University Placements",
+    "rules_desc": "Guidelines and code of conduct for maintaining institutional discipline and integrity.",
+    "shifts_label": "Shifts",
+    "shifts_value": "Morning & Day Shift",
+    "structure_title": "Academic Structure",
+    "students_label": "Students",
+    "success_desc": "Our graduates consistently secure admissions to the most prestigious universities in Bangladesh and abroad.",
+    "success_title": "Legacy of Success",
+    "versions_label": "Versions",
+    "versions_value": "Bangla & English Version",
+    "vision": "& Vision for Future"
+  },
+  "academic": {
+    "calendar_desc": "Plan ahead with our comprehensive academic schedule for the year 2026.",
+    "calendar_title": "Academic Calendar",
+    "date": "Date",
+    "day": "Day",
+    "event": "Event",
+    "holidays_desc": "Stay informed about scheduled holidays and institutional breaks.",
+    "holidays_title": "Holiday List",
+    "important_note": "Important Note",
+    "syllabus_desc": "Download and view the latest academic curriculum for all classes.",
+    "syllabus_title": "Academic Curriculum",
+    "type": "Type"
+  },
+  "achievement": {
+    "best_model": "Best Model College Award",
+    "best_model_desc": "Awarded by the Ministry of Education for excellence in academic administration and student performance.",
+    "ict_champion": "National ICT Champion",
+    "ict_champion_desc": "Our students secured the first position in the National High School Programming Contest.",
+    "science_fair": "Science Fair Excellence",
+    "science_fair_desc": "Top honors at the Central Science Fair for our innovative 'Green Dhaka' project.",
+    "sports_champ": "Regional Sports Championship",
+    "sports_champ_desc": "Winner of the Inter-College Cricket Tournament for the third consecutive year."
+  },
+  "admin": {
+    "accountant": "Accountant",
+    "accounts": "Accounts",
+    "administrative_exp": "over 20 years of administrative experience",
+    "business_person": "Business Person",
+    "chairman": "Chairman",
+    "financial_records": "handles the financial records and accounting of the institution with high precision",
+    "general_office": "General Office",
+    "guardian_member": "Guardian Member",
+    "head_math": "Head of Dept, Mathematics",
+    "industrialist": "Industrialist & Philanthropist",
+    "member_secretary": "Member Secretary",
+    "office_head": "Office Head",
+    "principal": "Principal, Demo Model School & College",
+    "social_worker": "Social Worker",
+    "teacher_rep": "Teacher Representative"
+  },
+  "admission": {
+    "academic_info": "Academic Info",
+    "admission_class": "Admission Class",
+    "bangla_ver": "Bangla Version",
+    "bangladeshi": "e.g. Bangladeshi",
+    "birth_cert": "as per birth certificate",
+    "breadcrumb": "Admissions",
+    "breadcrumb_form": "Online Application",
+    "buddhism": "Buddhism",
+    "christianity": "Christianity",
+    "class_11_sci": "Class 11 (Science)",
+    "class_6": "Class 6",
+    "class_9_com": "Class 9 (Commerce)",
+    "class_9_sci": "Class 9 (Science)",
+    "dob": "Date of Birth",
+    "email": "Email Address",
+    "english_ver": "English Version",
+    "father_name": "Father's Name",
+    "father_occupation": "Father's Occupation",
+    "female": "Female",
+    "form_desc": "Begin your journey towards excellence. Session 2026-27 is now open for applications.",
+    "form_title": "Online Admission Form",
+    "full_name": "Full Name of Student",
+    "gender": "Gender",
+    "guardian_info": "Guardian Info",
+    "hinduism": "Hinduism",
+    "home": "Home",
+    "islam": "Islam",
+    "male": "Male",
+    "mother_name": "Mother's Name",
+    "mother_occupation": "Mother's Occupation",
+    "nationality": "Nationality",
+    "next": "Next",
+    "other": "Other",
+    "permanent_address": "Permanent Address",
+    "phone_number": "Phone Number",
+    "phone_placeholder": "+880",
+    "previous": "Previous",
+    "ref_label": "Application Reference",
+    "ref_value": "DMC-ADM-2026-V7G3X1",
+    "religion": "Religion",
+    "return_home": "Return to Home",
+    "review": "Review",
+    "select_class": "Select Class",
+    "select_gender": "Select Gender",
+    "select_religion": "Select Religion",
+    "select_version": "Select Version",
+    "street_address": "Street, City, Postal Code",
+    "student_info": "Student Info",
+    "submit": "Submit",
+    "success_desc": "Your admission application has been successfully received. Our administrative office will review your details and contact you via email/phone within 3-5 working days.",
+    "success_title": "Application Submitted!",
+    "version_label": "Version"
+  },
+  "common": {
+    "back": "Back",
+    "loading": "Loading...",
+    "not_found": "Resource Not Found",
+    "not_found_desc": "The item you are looking for does not exist or has been moved.",
+    "read_more": "Read More"
+  },  "contact": {
+    "address_label": "Address",
+    "email": "Email Address",
+    "email_label": "Email",
+    "form_title": "Send us a Message",
+    "hero_desc": "Have any questions? We are here to help. Reach out to our administration or visit our campus.",
+    "hero_title": "Contact Us",
+    "hours_label": "Office Hours",
+    "hours_value": "Sun - Thu: 8:00 AM - 4:00 PM",
+    "info_title": "Contact Information",
+    "map_title": "Find us on Map",
+    "message": "Your Message",
+    "name": "Your Name",
+    "phone_label": "Phone",
+    "send": "Send Message",
+    "subject": "Subject",
+    "success_desc": "Thank you for reaching out. We will get back to you shortly.",
+    "success_title": "Message Sent!"
+  },
+  "event1": {
+    "date": "20 May, 2026",
+    "location": "College Ground",
+    "title": "Annual Sports Day"
+  },
+  "event2": {
+    "date": "05 June, 2026",
+    "location": "Main Auditorium",
+    "title": "Science Fair 2026"
+  },
+  "event3": {
+    "date": "12 June, 2026",
+    "location": "Conference Hall",
+    "title": "Inter-College Debate"
+  },
+  "events": {
+    "desc": "Stay updated with the latest happenings on our campus.",
+    "title": "Upcoming Events"
+  },
+  "facilities": {
+    "hero_desc": "State-of-the-art infrastructure ensuring a seamless learning experience.",
+    "hero_title": "World-Class",
+    "section_title": "Our Campus"
+  },
+  "feature": {
+    "activities": {
+      "desc": "Over 15 active clubs from robotics to debating for talent development.",
+      "title": "Co-curricular Activities"
+    },
+    "campus": {
+      "desc": "High-speed internet, air-conditioned digital classrooms, and well-equipped science labs.",
+      "title": "Modern Campus"
+    },
+    "teachers": {
+      "desc": "Highly qualified and dedicated faculty members for students personalized growth.",
+      "title": "Expert Teachers"
+    }
+  },
+  "footer": {
+    "about_us": "About Us",
+    "academic_calendar": "Academic Calendar",
+    "address": "123 Academic Road, Dhaka 1200, Bangladesh",
+    "admission_info": "Admission Info",
+    "board_results": "Board Results",
+    "connect": "Connect",
+    "contact_us": "Contact Us",
+    "dhaka_board": "Dhaka Board",
+    "dshe_website": "DSHE Website",
+    "exam_results": "Exam Results",
+    "navigation": "Navigation",
+    "newsletter": "Newsletter",
+    "newsletter_desc": "Subscribe for the latest updates and notices.",
+    "photo_gallery": "Photo Gallery",
+    "pmeat_portal": "PMEAT Portal",
+    "portals": "Portals",
+    "quick_links": "Quick Links",
+    "rights": "All Rights Reserved.",
+    "subscribe": "Subscribe"
+  },
+  "gallery": {
+    "academic_life": "Academic Life",
+    "all_photos": "All Photos",
+    "campus_view": "Campus View",
+    "cultural_events": "Cultural Events",
+    "empty_state": "No photos found in this category.",
+    "hero_desc": "A visual journey through the vibrant student life and facilities at Demo Model School & College.",
+    "hero_title": "Campus Photo Gallery",
+    "img1_title": "Main Administrative Building",
+    "img2_title": "Annual Prize Giving Ceremony 2025",
+    "img3_title": "Advanced Physics Laboratory",
+    "img4_title": "Inter-College Cricket Match",
+    "img5_title": "Central Library Reading Hall",
+    "img6_title": "Digital Classroom Session",
+    "img7_title": "Pohela Boishakh Celebration",
+    "img8_title": "Annual Athletics Meet",
+    "img9_title": "College Auditorium Exterior",
+    "media_center": "Media Center",
+    "photo_gallery": "Photo Gallery",
+    "sports_games": "Sports & Games"
+  },
+  "gov": {
+    "board_members_title": "Board Members",
+    "breadcrumb_admin": "Administration",
+    "breadcrumb_body": "Governing Body",
+    "breadcrumb_home": "Home",
+    "chairman_intro": "Aiming to transform the educational landscape of our region, the Chairman provides the vision and resources necessary to maintain Demo Model School & College as a premier institution. His commitment to social responsibility and empowerment drives our core values.",
+    "chairman_vision": "Aiming to transform the educational landscape of our region, the Chairman provides the vision and resources necessary to maintain Demo Model School & College as a premier institution. His commitment to social responsibility and empowerment drives our core values.",
+    "hero_desc": "The Governing Body of Demo Model School & College is responsible for the strategic direction, policy-making, and financial oversight of the institution. Our board consists of distinguished professionals and community leaders dedicated to excellence in education.",
+    "hero_subtitle": "Administration",
+    "hero_title": "Leadership &",
+    "intro": "The Governing Body of Demo Model School & College is responsible for the strategic direction, policy-making, and financial oversight of the institution. Our board consists of distinguished professionals and community leaders dedicated to excellence in education.",
+    "members_title": "Board Members",
+    "official_seat": "Official Seat",
+    "official_seat_title": "Official Seat",
+    "seat_desc": "Governing Body meetings are held monthly at the College Administrative Building. Minutes of public sessions and strategic plans are available for review upon request by authorized stakeholders.",
+    "title_main": "Leadership & Governing Body",
+    "verified": "Verified Administration",
+    "verified_label": "Verified Administration"
+  },
+  "hero": {
+    "admission": "Apply Now",
+    "description": "Nurturing future leaders since 1995 through quality education and moral values.",
+    "explore": "Explore Campus",
+    "slide1": {
+      "cta": "Admission 2026",
+      "subtitle": "A legacy of academic excellence and character building since 1995.",
+      "title": "Nurturing Future Leaders"
+    },
+    "slide2": {
+      "cta": "View Facilities",
+      "subtitle": "State-of-the-art laboratories and digital learning environments.",
+      "title": "Innovation in Classrooms"
+    },
+    "slide3": {
+      "cta": "Student Life",
+      "subtitle": "Nurturing talent through sports, debate, and cultural enrichment.",
+      "title": "Holistic Development"
+    },
+    "subtitle": "Education & Character",
+    "title": "Striving for Excellence",
+    "updates": "Latest Updates"
+  },
+  "highlights": {
+    "desc": "We combine traditional values with modern methodology to create a unique learning experience.",
+    "title": "Why Choose Our Institution?"
+  },
+  "history": {
+    "hero_desc": "A journey of excellence, character building, and academic success since 1995.",
+    "milestones_p": "In its first decade, the college focused on establishing a culture of discipline and rigorous academic standards. By 2005, we had doubled our student capacity and introduced state-of-the-art laboratory facilities, setting a new benchmark for secondary education in Dhaka.",
+    "milestones_title": "Early Milestones",
+    "p1": "Founded in 1995, Demo Model School & College began with a simple yet profound goal: to provide world-class education that is accessible to all. What started as a small initiative with 10 teachers and 100 students in a modest building has now evolved into one of Bangladesh's premier educational institutions.",
+    "p2": "Over the last three decades, we have consistently secured top positions in the Dhaka Education Board results. Our alumni are now leaders in medicine, engineering, public service, and the arts, carrying forward the values of integrity and service they learned within these walls.",
+    "p3": "Today, Demo Model School & College stands as a symbol of progress, blending tradition with modern technology. Our commitment remains unchanged: to nurture the next generation of leaders who will contribute meaningfully to the nation and the world.",
+    "section_title": "The Journey Began",
+    "title": "Our History"
+  },
+  "holidays": {
+    "table_note": "Lunar-based holidays (e.g., Eid-ul-Fitr, Shab-e-Barat) are subject to the sighting of the moon. Any changes to the scheduled dates will be notified immediately through our official channels."
+  },
+  "home": {
+    "academic_calendar": "Academic Calendar",
+    "class_routines": "Class Routines",
+    "download_syllabus": "Download Curriculum",
+    "exam_schedules": "Exam Schedules",
+    "join_community": "Join Our Community",
+    "payment_gateway": "Payment Gateway",
+    "quick_access": "Quick Access",
+    "student_portal": "Student Portal Login",
+    "ticker": {
+      "notice1": "Online admission for Class XI (Session 2026-27) will continue until May 15.",
+      "notice2": "HSC 2026 examinees are requested to collect their admit cards from the office.",
+      "notice3": "Inter-College Sports Tournament will begin from next Saturday."
+    },
+    "updates": "Updates",
+    "why_choose": "Why Choose Our Institution?",
+    "why_choose_desc": "We combine traditional values with modern methodology to create a unique learning experience."
+  },
+  "infra": {
+    "auditorium": {
+      "desc": "A 500-seat multi-purpose hall for cultural events, seminars, and academic conferences.",
+      "title": "Auditorium"
+    },
+    "classrooms": {
+      "desc": "Interactive multimedia boards and high-speed Wi-Fi in every classroom to make teaching more effective.",
+      "title": "Smart Classrooms"
+    },
+    "labs": {
+      "desc": "Fully equipped Physics, Chemistry, and Biology laboratories with advanced experimental setups.",
+      "title": "Modern Science Labs"
+    },
+    "library": {
+      "desc": "A vast collection of 20,000+ books and journals with a high-speed digital resource center.",
+      "title": "Digital Library"
+    }
+  },
+  "mission": {
+    "core_values_desc": "The principles that guide our institutional culture and daily decision-making.",
+    "core_values_title": "Core Values",
+    "hero_desc": "Defining our path through core values, clear vision, and a steadfast mission.",
+    "mission_text": "To empower students with a holistic education that blends academic rigor with ethical integrity, preparing them to lead with purpose in a global society. We strive to create an environment where brilliance meets social responsibility.",
+    "mission_title": "Our Mission",
+    "purpose": "Our Purpose",
+    "vision_text": "To be recognized as a center of excellence that nurtures intellectual curiosity, character development, and a lifelong passion for learning and innovation. We aim to set the benchmark for transformative education in Bangladesh.",
+    "vision_title": "Our Vision"
+  },
+  "nav": {
+    "about": "About",
+    "academic": "Academic",
+    "achievements": "Achievements",
+    "administration": "Administration",
+    "admission": "Admission",
+    "calendar": "Academic Calendar",
+    "contact": "Contact",
+    "facilities": "Facilities",
+    "gallery": "Gallery",
+    "governing": "Governing Body",
+    "history": "History",
+    "holidays": "Holiday List",
+    "home": "Home",
+    "mission": "Mission & Vision",
+    "organogram": "Organogram",
+    "principal_msg": "Principal's Message",
+    "student": "Student",
+    "guardian": "Guardian",
+    "results": "Exam Results",
+    "routine": "Class Routine",
+    "rules": "Rules & Regulations",
+    "staff": "Office Staff",
+    "syllabus": "Curriculum",
+    "teachers": "Teachers"
+  },
+  "notice": {
+    "admission": "Admission",
+    "class_xi_admission": "Online admission guidelines for Class XI, Session 2026-27",
+    "examination": "Examination",
+    "holiday": "Holiday",
+    "holiday_eid": "Academic Holiday Notice: Eid-ul-Fitr 2026",
+    "hsc_form": "HSC 2025 Form Fill-up notice for regular students",
+    "sports": "Sports",
+    "sports_tournament": "Registration for Inter-College Sports Competition 2026",
+    "ssc_exam": "Routine and Seat Plan for SSC 2026 Examination"
+  },
+  "notices": {
+    "desc": "Official announcements, examination schedules, and academic updates.",
+    "download": "Download",
+    "title": "Notice Board",
+    "urgent": "Urgent",
+    "view_all": "View All Notices"
+  },  "organogram": {
+    "hero_desc": "A clear hierarchy that ensures efficient administration and academic excellence.",
+    "level1": "Governing Body",
+    "level1_desc": "Policy making and strategic oversight.",
+    "level2": "Principal",
+    "level2_desc": "Chief executive and academic head.",
+    "level3": "Vice-Principal",
+    "level3_desc": "Academic coordination and supervision.",
+    "level4_academic": "Academic Departments",
+    "level4_academic_desc": "Heads of Departments & Faculty.",
+    "level4_admin": "Administrative Office",
+    "level4_admin_desc": "Accounts, Registry & Human Resources.",
+    "level5_support": "Support Services",
+    "level5_support_desc": "Library, IT, Security & Facilities.",
+    "title": "Organizational Structure"
+  },
+  "person": {
+    "all_dept": "All",
+    "clear_search": "Clear Search",
+    "hero_faculty_desc": "Meet the dedicated educators of Demo Model School & College. Our faculty members combine deep academic expertise with a passion for mentoring students to reach their highest potential.",
+    "hero_faculty_subtitle": "Expert Faculty",
+    "hero_faculty_title": "Our Dedicated",
+    "hero_staff_desc": "Our administrative and support staff are the backbone of Demo Model School & College. They ensure that daily operations run smoothly and provide essential services to students, parents, and faculty.",
+    "hero_staff_subtitle": "Support",
+    "hero_staff_title": "Administrative",
+    "members": "Members",
+    "not_found": "No members found",
+    "not_found_desc": "Try changing your search or filters to find what you are looking for.",
+    "search_placeholder": "Search by name or designation...",
+    "showing": "Showing",
+    "view_profile": "View Full Profile"
+  },
+  "principal": {
+    "admin_breadcrumb": "Administration",
+    "experience": "Experience",
+    "experience_label": "Experience",
+    "experience_value": "25+ Years in Education",
+    "hero_subtitle": "Building Futures",
+    "hero_title": "Empowering Minds,",
+    "msg_breadcrumb": "Principal's Message",
+    "msg_p1": "Welcome to Demo Model School & College. It is an honor to serve as the Principal of this institution, which has been a hub of academic excellence in Dhaka since 1995. Our goal has always been clear: to provide a nurturing environment where every student can achieve their full potential.",
+    "msg_p2": "In today’s rapidly changing world, education must go beyond the traditional boundaries of textbooks. At Demo Model School & College, we emphasize \"holistic development.\" We combine a rigorous academic curriculum with a wide range of co-curricular activities to ensure our graduates are not just well-educated, but are well-rounded individuals ready to face global challenges.",
+    "msg_p3": "Our state-of-the-art facilities, dedicated faculty, and technology-integrated classrooms provide the perfect setting for learning. Whether it is in the science lab, on the sports field, or in the debating hall, we encourage our students to be curious, to ask questions, and to dream big.",
+    "msg_p4": "I invite you to explore our website and learn more about our college. To the parents, thank you for trusting us with your child’s future. To the students, remember that your journey at Demo Model School & College is just the beginning of a lifetime of success.",
+    "msg_quote": "We do not just teach subjects; we instill values. Our aim is to create leaders who will lead with integrity, empathy, and innovation.",
+    "office_hours": "Office Hours",
+    "office_hours_label": "Office Hours",
+    "office_time": "Sun - Thu: 9AM - 2PM",
+    "phd": "PhD in Educational Leadership",
+    "quote": "Education is the most powerful weapon which you can use to change the world. At Demo Model School & College, we do not just teach students; we empower them with values that last a lifetime.",
+    "read_more": "Read Full Message",
+    "breadcrumb_admin": "Administration",
+    "breadcrumb_home": "Home",
+    "breadcrumb_msg": "Principal's Message",
+    "msg_closing": "I invite you to explore our website and learn more about our college. To the parents, thank you for trusting us with your child's future. To the students, remember that your journey at Demo Model School & College is just the beginning of a lifetime of success.",
+    "msg_facilities": "Our state-of-the-art facilities, dedicated faculty, and technology-integrated classrooms provide the perfect setting for learning. Whether it is in the science lab, on the sports field, or in the debating hall, we encourage our students to be curious, to ask questions, and to dream big.",
+    "msg_holistic": "In today's rapidly changing world, education must go beyond the traditional boundaries of textbooks. At Demo Model School & College, we emphasize \"holistic development.\" We combine a rigorous academic curriculum with a wide range of co-curricular activities to ensure our graduates are not just well-educated, but are well-rounded individuals ready to face global challenges.",
+    "msg_intro": "Welcome to Demo Model School & College. It is an honor to serve as the Principal of this institution, which has been a hub of academic excellence in Dhaka since 1995. Our goal has always been clear: to provide a nurturing environment where every student can achieve their full potential.",
+    "quick_link_faculty": "Expert Faculty",
+    "quick_link_governing": "Governing Body",
+    "quick_link_leadership": "Leadership & Governance",
+    "quick_link_staff": "Office Staff",
+    "quick_link_support": "Administrative Support",
+    "quick_link_teachers": "Our Teachers",
+    "regards": "Best Regards,",
+    "sidebar_principal": "Principal",
+    "sidebar_title": "Principal",
+    "title": "Principal's Message",
+    "title_main": "Principal's Message",
+    "warm_regards": "With warm regards and best wishes,"
+  },
+  "staff": {
+    "breadcrumb_admin": "Administration",
+    "breadcrumb_home": "Home",
+    "breadcrumb_staff": "Office Staff",
+    "clear_search": "Clear Search",
+    "intro": "Our administrative and support staff are the backbone of Demo Model School & College. They ensure that daily operations run smoothly and provide essential services to students, parents, and faculty.",
+    "no_found": "No staff members found",
+    "search_placeholder": "Search by name or designation...",
+    "showing": "Showing",
+    "staff_members": "Staff Members",
+    "title_main": "Administrative Staff"
+  },
+  "teachers": {
+    "breadcrumb_admin": "Administration",
+    "breadcrumb_home": "Home",
+    "breadcrumb_teachers": "Teachers",
+    "clear_search": "Clear Search",
+    "faculty_members": "Faculty Members",
+    "intro": "Meet the dedicated educators of Demo Model School & College. Our faculty members combine deep academic expertise with a passion for mentoring students to reach their highest potential.",
+    "no_found": "No teachers found",
+    "search_placeholder": "Search by name or subject...",
+    "showing": "Showing",
+    "title_main": "Our Dedicated Teachers"
+  },
+  "results": {
+    "academic": "Academic",
+    "avg_gpa": "Average Grade",
+    "bangla_lit": "Bangla Literature",
+    "biology_sub": "Biology",
+    "chemistry_sub": "Chemistry",
+    "class_group": "Class & Group",
+    "english_gram": "English Grammar",
+    "exam_label": "Examination",
+    "exam_results": "Exam Results",
+    "examination": "Examination",
+    "final": "Final Examination",
+    "find_result": "Find Result",
+    "first_term": "First Terminal Exam",
+    "full_name": "Full Name",
+    "gp": "Grade Point",
+    "gpa_label": "GPA",
+    "grade": "Grade",
+    "half_yearly": "Half Yearly Exam",
+    "hero_desc": "Immediate access to our students academic performance reports.",
+    "hero_title": "Internal Exam Results",
+    "higher_math": "Higher Mathematics",
+    "issued_date": "Date of Issue",
+    "loading": "Searching...",
+    "marks": "Marks",
+    "marks_label": "Total Marks",
+    "passed": "Passed",
+    "physics_sub": "Physics",
+    "result_found": "Result Found",
+    "result_label": "Result",
+    "result_note": "This is an internal assessment result. Official board results will be published separately.",
+    "search_btn": "Search",
+    "search_title": "Academic Inquiry",
+    "select_exam": "Select Examination",
+    "session_year": "Session Year",
+    "status_label": "Status",
+    "student_id": "Student ID / Roll",
+    "student_id_label": "Student ID",
+    "student_id_placeholder": "e.g. 20261001",
+    "subject_name": "Subject Name",
+    "transcript": "Academic Transcript",
+    "year_label": "Year"
+  },
+  "routine": {
+    "contact_office": "Contact Office",
+    "docs_title": "Available Documents",
+    "download": "Download",
+    "hero_desc": "Stay updated with our latest class schedules and shift information.",
+    "hero_title": "Academic Routine",
+    "info_text": "These routines are applicable for the first semester of the 2026 academic session. For special holiday schedules or exam routines, please keep an eye on our notice board.",
+    "info_title": "Academic Year 2026",
+    "last_updated": "Last Updated",
+    "medium_suffix": "Version",
+    "request_support": "Request Support",
+    "shift_suffix": "Shift",
+    "support_text": "If you cannot find the routine for your class or specific shift, please contact the administrative office or check back later.",
+    "support_title": "Cannot find routine?"
+  },
+  "rules": {
+    "attendance_text": "A minimum of 80% attendance is mandatory for students to be eligible for terminal and final examinations. In case of absence due to illness, a medical certificate must be submitted within three days of joining.",
+    "attendance_title": "Attendance Policy",
+    "campus_text": "College property must be respected. Vandalism or littering will result in strict disciplinary action. Students are encouraged to participate in keeping the campus green and clean.",
+    "campus_title": "Campus Integrity",
+    "discipline_text": "Students are expected to maintain the highest standards of behavior. Punctuality is mandatory. Students must reach the campus at least 15 minutes before the first bell. Use of mobile phones or any unauthorized electronic devices is strictly prohibited on campus.",
+    "discipline_title": "General Discipline",
+    "hero_desc": "Defining the standards of behavior and discipline that foster a respectful learning environment.",
+    "title": "Code of Conduct",
+    "uniform_text": "Students must wear the prescribed college uniform on all working days. The uniform must be clean, well-pressed, and worn with the official college ID card. Boys must maintain a standard hair length, and girls should avoid excessive jewelry or makeup.",
+    "uniform_title": "Dress Code & Uniform"
+  },
+  "stats": {
+    "students": {
+      "label": "Students",
+      "value": "1500+"
+    },
+    "teachers": {
+      "label": "Teachers",
+      "value": "100+"
+    },
+    "classes": {
+      "label": "Classes",
+      "value": "50+"
+    },
+    "passing_rate": {
+      "label": "Passing Rate",
+      "value": "98%"
+    }
+  },  "teacher": {
+    "administration": "Administration",
+    "assistant_teacher": "Assistant Teacher",
+    "biology": "Biology",
+    "chemistry": "Chemistry",
+    "english": "English",
+    "head_dept": "Head of Dept",
+    "mathematics": "Mathematics",
+    "physics": "Physics",
+    "senior_teacher": "Senior Teacher",
+    "vice_principal": "Vice Principal"
+  },
+  "testimonial1": {
+    "content": "The transformation I have seen in my son’s confidence and academic performance since joining this college is remarkable. The teachers are incredibly supportive.",
+    "name": "Mrs. Sultana Razia",
+    "relation": "Mother of Class 12 Student"
+  },
+  "testimonial2": {
+    "content": "Demo Model School & College does not just focus on grades. They really care about character building. My daughter has learned to be more disciplined and responsible here.",
+    "name": "Mr. Ahmed Ullah",
+    "relation": "Father of HSC 2025 Examinee"
+  },
+  "testimonial3": {
+    "content": "The digital classroom facilities and modern science labs are among the best in the city. It is a great environment for science-minded students.",
+    "name": "Engr. Kamrul Islam",
+    "relation": "Guardian of Class 11 Student"
+  },
+  "testimonials": {
+    "desc": "We are proud of the positive impact we have made on our students and their families.",
+    "title": "What Guardians Say"
+  },
+  "topbar": {
+    "email": "info@demo.edu.bd",
+    "phone": "+880 1234 567890"
+  },
+  "value": {
+    "excellence": {
+      "desc": "Striving for perfection in academic performance and co-curricular activities.",
+      "title": "Excellence"
+    },
+    "innovation": {
+      "desc": "Encouraging creative thinking and modern approaches in teaching and learning.",
+      "title": "Innovation"
+    },
+    "integrity": {
+      "desc": "Upholding the highest ethical and moral standards in all aspects of college life.",
+      "title": "Integrity"
+    },
+    "service": {
+      "desc": "Nurturing a sense of responsibility and commitment to the society and nation.",
+      "title": "Service"
+    }
+  },
+  "visit": {
+    "close": "Close Window",
+    "date": "Preferred Date",
+    "email": "Email Address",
+    "name": "Full Name",
+    "schedule": "Schedule Campus Visit",
+    "submit": "Request Visit",
+    "success_desc": "Thank you for your interest. Our administrative team will contact you shortly to confirm your visit.",
+    "success_title": "Request Received!",
+    "subtitle": "Come and experience our world-class campus in person.",
+    "title": "Book a Visit"
+  },
+  "welcome": {
+    "institution": "Demo Model School & College",
+    "learn_more": "Learn More About Our Heritage",
+    "text1": "At Demo Model School & College, we believe in providing more than just an academic education. Since our inception in 1995, we have been committed to fostering an environment where curiosity is encouraged and character is built.",
+    "text2": "Our institution stands as a beacon of quality education in Dhaka, offering both Bangla and English versions to cater to diverse student needs. We pride ourselves on our state-of-the-art facilities and a curriculum that balances rigorous academics with vibrant extracurricular activities.",
+    "title": "Welcome to"
+  }
+}

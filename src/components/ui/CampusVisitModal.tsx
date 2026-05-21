@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { X, Calendar, User, Mail, CheckCircle2 } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import { useLanguage } from '@/lib/LanguageContext';
 
 interface CampusVisitModalProps {
@@ -11,7 +10,7 @@ interface CampusVisitModalProps {
 }
 
 export default function CampusVisitModal({ isOpen, onClose }: CampusVisitModalProps) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -49,15 +48,15 @@ export default function CampusVisitModal({ isOpen, onClose }: CampusVisitModalPr
             <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-8 animate-bounce">
               <CheckCircle2 size={40} />
             </div>
-            <h2 className="text-3xl font-black text-slate-900 mb-4 uppercase tracking-tight">Request Received!</h2>
+            <h2 className="text-3xl font-black text-slate-900 mb-4 uppercase tracking-tight">{t('visit.success_title')}</h2>
             <p className="text-slate-600 font-medium mb-10 leading-relaxed">
-              Thank you for your interest. Our administration team will contact you shortly to confirm your visit.
+              {t('visit.success_desc')}
             </p>
             <button 
               onClick={onClose}
               className="px-10 py-4 bg-brand-primary text-white font-black text-xs uppercase tracking-widest rounded-2xl shadow-lg shadow-brand-primary/20 hover:shadow-xl hover:-translate-y-1 transition-all"
             >
-              Close Window
+              {t('visit.close')}
             </button>
           </div>
         ) : (
@@ -80,7 +79,7 @@ export default function CampusVisitModal({ isOpen, onClose }: CampusVisitModalPr
                     type="text" 
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    placeholder="John Doe"
+                    placeholder={language === 'en' ? 'John Doe' : 'আপনার নাম'}
                     className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-transparent focus:border-brand-primary/20 focus:bg-white rounded-2xl outline-none transition-all font-medium text-sm"
                   />
                 </div>
@@ -95,7 +94,7 @@ export default function CampusVisitModal({ isOpen, onClose }: CampusVisitModalPr
                     type="email" 
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    placeholder="john@example.com"
+                    placeholder={language === 'en' ? 'john@example.com' : 'ইমেল ঠিকানা'}
                     className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-transparent focus:border-brand-primary/20 focus:bg-white rounded-2xl outline-none transition-all font-medium text-sm"
                   />
                 </div>
