@@ -36,8 +36,8 @@ export function useScrollReveal() {
         }
       },
       {
-        threshold: 0.05, // Lower threshold for better reliability
-        rootMargin: '50px', // Start revealing slightly before it enters the viewport
+        threshold: 0.15, // Increase threshold so it reveals later
+        rootMargin: '0px', // Remove the eager reveal
       }
     );
 
