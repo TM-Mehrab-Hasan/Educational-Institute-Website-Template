@@ -47,6 +47,7 @@ const Footer = () => {
               <li><Link href="/admission" className="hover:text-brand-primary transition-colors flex items-center gap-2"><ChevronRight size={14} className="text-brand-primary" /> {t('nav.admission')}</Link></li>
               <li><Link href="/student" className="hover:text-brand-primary transition-colors flex items-center gap-2"><ChevronRight size={14} className="text-brand-primary" /> {t('nav.student')}</Link></li>
               <li><Link href="/guardian" className="hover:text-brand-primary transition-colors flex items-center gap-2"><ChevronRight size={14} className="text-brand-primary" /> {t('nav.guardian')}</Link></li>
+              <li><Link href="/administration/alumni" className="hover:text-brand-primary transition-colors flex items-center gap-2"><ChevronRight size={14} className="text-brand-primary" /> {t('nav.alumni')}</Link></li>
               <li><Link href="/gallery" className="hover:text-brand-primary transition-colors flex items-center gap-2"><ChevronRight size={14} className="text-brand-primary" /> {t('footer.photo_gallery')}</Link></li>
             </ul>
           </div>

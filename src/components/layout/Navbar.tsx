@@ -33,6 +33,7 @@ const Navbar = () => {
         { name: t('nav.governing'), href: '/administration/governing-body' as any },
         { name: t('nav.teachers'), href: '/administration/teachers' as any },
         { name: t('nav.staff'), href: '/administration/staff' as any },
+        { name: t('nav.alumni'), href: '/administration/alumni' as any },
       ]
     },
     { 
@@ -43,7 +44,6 @@ const Navbar = () => {
         { name: t('nav.syllabus'), href: '/academic/curriculum' as any },
         { name: t('nav.calendar'), href: '/academic/calendar' as any },
         { name: t('nav.holidays'), href: '/academic/holidays' as any },
-        { name: t('nav.results'), href: '/results' as any },
         { name: t('notices.title'), href: '/notices' as any },
         { name: 'Events & Activities', href: '/academic/events' as any },
       ]
