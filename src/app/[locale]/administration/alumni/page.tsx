@@ -1,31 +1,15 @@
 "use client";
 
-import React, { useState, useRef } from 'react';
-import dynamic from 'next/dynamic';
-import { useLanguage } from '@/lib/LanguageContext';
-import { useScrollReveal } from '@/lib/hooks';
-import { 
-  GraduationCap, Users, Award, Calendar, ChevronRight, 
-  Search, Briefcase, Heart, MessageSquare, LogOut, 
-  UserCircle, Settings, Bell, ArrowRight, X, BookOpen,
-  CheckCircle2, Clock, MapPin, ExternalLink, Filter, Plus, Camera, Save, User, Mail, Phone, Download, FileText
-} from 'lucide-react';
-import { Link } from '@/i18n/routing';
+import React, { useState } from 'react';
 import Image from 'next/image';
-import { useAlumniAuth, Alumni, JobOpportunity } from '@/lib/AlumniAuthContext';
+import { useScrollReveal } from '@/lib/hooks';
+import { Award, ChevronRight, LogOut, X } from 'lucide-react';
+import { useAlumniAuth, Alumni } from '@/lib/AlumniAuthContext';
 import AlumniLoginForm from '@/components/alumni/AlumniLoginForm';
 import AlumniRegisterForm from '@/components/alumni/AlumniRegisterForm';
 import { cn } from '@/lib/utils';
 
-// Client-side only PDF download
-const PDFDownloadLink = dynamic(
-  () => import('@react-pdf/renderer').then((mod) => mod.PDFDownloadLink),
-  { ssr: false }
-);
-import AlumniReceiptPDF from '@/lib/pdf/AlumniReceiptPDF';
-
 export default function AlumniPage() {
-  const { t } = useLanguage();
   const { currentAlumni, logout, getAllAlumni } = useAlumniAuth();
   const { ref: heroRef, isVisible: heroVisible } = useScrollReveal();
   const [showAuthModal, setShowAuthModal] = useState(false);
@@ -53,7 +37,15 @@ export default function AlumniPage() {
   };
 
   if (currentAlumni) {
-    return <AlumniDashboard alumni={currentAlumni} logout={logout} activeTab={activeTab} setActiveTab={setActiveTab} getAllAlumni={getAllAlumni} />;
+    return (
+      <AlumniDashboard 
+        alumni={currentAlumni} 
+        logout={logout} 
+        activeTab={activeTab} 
+        setActiveTab={setActiveTab} 
+        getAllAlumni={getAllAlumni} 
+      />
+    );
   }
 
   return (
@@ -88,8 +80,8 @@ export default function AlumniPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
           {featuredAlumni.map((alumnus, i) => (
             <div key={i} className="bg-slate-50 rounded-[2.5rem] p-10 border border-ui-border relative group hover:bg-white hover:shadow-2xl transition-all duration-500">
-              <div className="w-24 h-24 rounded-3xl overflow-hidden mb-8 border-4 border-white shadow-lg group-hover:scale-105 transition-transform mx-auto">
-                <img src={alumnus.image} alt={alumnus.name} className="w-full h-full object-cover" />
+              <div className="w-24 h-24 rounded-3xl overflow-hidden mb-8 border-4 border-white shadow-lg group-hover:scale-105 transition-transform mx-auto relative">
+                <Image src={alumnus.image} alt={alumnus.name} fill className="object-cover" />
               </div>
               <blockquote className="text-text-muted italic leading-relaxed mb-8 text-center text-sm">
                 &quot;{alumnus.quote}&quot;
@@ -122,3 +114,28 @@ export default function AlumniPage() {
 }
 
 // DASHBOARD_PLACEHOLDER
+function AlumniDashboard({ 
+  alumni, 
+  logout 
+}: { 
+  alumni: Alumni; 
+  logout: () => void; 
+  activeTab: string; 
+  setActiveTab: (tab: string) => void; 
+  getAllAlumni: () => Alumni[]; 
+}) {
+  return (
+    <div className="min-h-screen bg-slate-50 py-12 flex flex-col items-center justify-center">
+      <div className="bg-white p-8 rounded-2xl shadow-lg text-center max-w-md w-full">
+        <h2 className="text-2xl font-bold mb-2">Welcome, {alumni?.name || 'Alumnus'}!</h2>
+        <p className="text-gray-600 mb-8">Alumni dashboard is under construction.</p>
+        <button 
+          onClick={logout} 
+          className="px-6 py-2 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition-colors w-full"
+        >
+          Logout
+        </button>
+      </div>
+    </div>
+  );
+}
