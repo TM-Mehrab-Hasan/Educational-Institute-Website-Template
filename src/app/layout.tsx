@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { getLocale } from 'next-intl/server';
+import PWARegister from "@/components/PWARegister";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -58,6 +59,7 @@ export default async function RootLayout({
         className="min-h-full flex flex-col bg-gray-50 text-gray-900"
         suppressHydrationWarning
       >
+        <PWARegister />
         {children}
       </body>
     </html>
