@@ -10,6 +10,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.9",
     "@react-pdf/renderer": "^4.5.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.14.0",

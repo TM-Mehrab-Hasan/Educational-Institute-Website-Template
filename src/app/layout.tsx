@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { getLocale } from 'next-intl/server';
@@ -13,12 +13,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  themeColor: "#ffffff",
+};
+
 export const metadata: Metadata = {
   title: {
     template: "%s | Demo Model School & College",
     default: "Demo Model School & College | Excellence in Education",
   },
   description: "Official website of Demo Model School & College, Dhaka, Bangladesh. Providing quality education since 1995.",
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Demo School",
+  },
   icons: {
     icon: [
       { url: '/images/logo.png' },
