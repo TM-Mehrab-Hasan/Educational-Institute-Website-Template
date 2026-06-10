@@ -1,15 +1,17 @@
 "use client";
 
 import React from "react";
-import { Page, Text, View, Document, StyleSheet, Font } from "@react-pdf/renderer";
+import { Page, Text, View, Document, StyleSheet, Image } from "@react-pdf/renderer";
 
 const styles = StyleSheet.create({
   page: { padding: 40, backgroundColor: "#ffffff", fontFamily: "Helvetica" },
-  header: { flexDirection: "row", justifyContent: "space-between", marginBottom: 40, borderBottom: 2, borderBottomColor: "#059669", paddingBottom: 20 },
-  logoSection: { flexDirection: "column" },
+  header: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 40, borderBottom: 2, borderBottomColor: "#059669", paddingBottom: 20 },
+  logoSection: { flexDirection: "row", alignItems: "center", gap: 15 },
+  logo: { width: 40, height: 40 },
+  schoolInfo: { flexDirection: "column" },
   schoolName: { fontSize: 24, fontWeight: "bold", color: "#064e3b" },
   tagline: { fontSize: 10, color: "#059669", marginTop: 4, textTransform: "uppercase", letterSpacing: 1 },
-  receiptTitle: { fontSize: 32, fontWeight: "bold", color: "#e2e8f0", position: "absolute", right: 0, top: 10 },
+  receiptTitle: { fontSize: 32, fontWeight: "bold", color: "#e2e8f0" },
   section: { marginBottom: 30 },
   row: { flexDirection: "row", justifyContent: "space-between", marginBottom: 10, paddingBottom: 5, borderBottom: 1, borderBottomColor: "#f1f5f9" },
   label: { fontSize: 10, color: "#64748b", textTransform: "uppercase" },
@@ -42,8 +44,11 @@ export default function AlumniReceiptPDF({
       <Page size="A4" style={styles.page}>
         <View style={styles.header}>
           <View style={styles.logoSection}>
-            <Text style={styles.schoolName}>Demo Model School & College</Text>
-            <Text style={styles.tagline}>Excellence in Education Since 1995</Text>
+            <Image src="/images/logo.png" style={styles.logo} />
+            <View style={styles.schoolInfo}>
+              <Text style={styles.schoolName}>Demo Model School & College</Text>
+              <Text style={styles.tagline}>Excellence in Education Since 1995</Text>
+            </View>
           </View>
           <Text style={styles.receiptTitle}>RECEIPT</Text>
         </View>
