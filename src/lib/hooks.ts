@@ -31,8 +31,8 @@ export function useScrollReveal() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Stop observing once visible to save resources
-          observer.unobserve(entry.target);
+        } else {
+          setIsVisible(false);
         }
       },
       {

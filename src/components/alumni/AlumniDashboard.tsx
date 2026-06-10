@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 import { 
   Users, Briefcase, Heart, Calendar, User, 
   LogOut, Menu, X, ChevronRight, Search, 
-  Download, Plus, Filter, MapPin,
+  Download, Plus, Filter, MapPin, Mail,
   Award, Bell, ArrowRight, BookOpen,
   CheckCircle2, Clock, Camera, Phone, Save
 } from 'lucide-react';
@@ -38,6 +38,7 @@ export default function AlumniDashboard({
   getAllAlumni 
 }: AlumniDashboardProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [selectedMember, setSelectedMember] = useState<Alumni | null>(null);
 
   const navigation = [
     { name: 'Directory', icon: Users, id: 'Directory' as TabType },
@@ -158,7 +159,7 @@ export default function AlumniDashboard({
         {/* Content Scrolling Area */}
         <div className="flex-1 overflow-y-auto p-6 lg:p-10">
           <div className="max-w-7xl mx-auto">
-            {activeTab === 'Directory' && <DirectoryView getAllAlumni={getAllAlumni} />}
+            {activeTab === 'Directory' && <DirectoryView getAllAlumni={getAllAlumni} onViewProfile={setSelectedMember} />}
             {activeTab === 'Donations' && <DonationsView alumni={alumni} />}
             {activeTab === 'Jobs' && <JobsView />}
             {activeTab === 'Events' && <EventsView />}
@@ -166,13 +167,18 @@ export default function AlumniDashboard({
           </div>
         </div>
       </main>
+
+      {/* Member Profile Modal */}
+      {selectedMember && (
+        <MemberProfileModal member={selectedMember} onClose={() => setSelectedMember(null)} />
+      )}
     </div>
   );
 }
 
 // --- SUB-COMPONENTS ---
 
-function DirectoryView({ getAllAlumni }: { getAllAlumni: () => Alumni[] }) {
+function DirectoryView({ getAllAlumni, onViewProfile }: { getAllAlumni: () => Alumni[]; onViewProfile: (member: Alumni) => void }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [deptFilter, setDeptFilter] = useState('All');
   const allAlumni = getAllAlumni();
@@ -268,7 +274,10 @@ function DirectoryView({ getAllAlumni }: { getAllAlumni: () => Alumni[] }) {
                 )}
               </div>
 
-              <button className="mt-6 w-full py-3 bg-slate-50 text-text-muted hover:bg-brand-primary hover:text-white rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center justify-center gap-2">
+              <button 
+                onClick={() => onViewProfile(member)}
+                className="mt-6 w-full py-3 bg-slate-50 text-text-muted hover:bg-brand-primary hover:text-white rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center justify-center gap-2"
+              >
                 View Profile <ArrowRight size={12} />
               </button>
             </div>
@@ -285,6 +294,104 @@ function DirectoryView({ getAllAlumni }: { getAllAlumni: () => Alumni[] }) {
           <p className="text-sm text-text-muted max-w-xs mx-auto">Try adjusting your search terms or department filters to find who you&apos;re looking for.</p>
         </div>
       )}
+    </div>
+  );
+}
+
+function MemberProfileModal({ member, onClose }: { member: Alumni; onClose: () => void }) {
+  return (
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+      <div className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm" onClick={onClose}></div>
+      <div className="bg-white w-full max-w-2xl rounded-[2.5rem] shadow-2xl relative z-10 overflow-hidden animate-in zoom-in-95 duration-300">
+        <div className="h-32 bg-brand-primary relative">
+          <button 
+            onClick={onClose}
+            className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 backdrop-blur text-white hover:bg-white/20 transition-all flex items-center justify-center"
+          >
+            <X size={20} />
+          </button>
+          <div className="absolute -bottom-12 left-10 w-24 h-24 rounded-3xl bg-white border-4 border-white shadow-xl flex items-center justify-center overflow-hidden relative">
+             {member.profilePhoto ? (
+               <Image src={member.profilePhoto} alt={member.name} fill className="object-cover" />
+             ) : (
+               <User size={40} className="text-slate-200" />
+             )}
+          </div>
+        </div>
+
+        <div className="pt-16 px-10 pb-10">
+          <div className="mb-8">
+            <h2 className="text-2xl font-black text-text-main uppercase tracking-tight">{member.name}</h2>
+            <p className="text-sm font-bold text-brand-primary uppercase tracking-widest">{member.batch} · {member.department}</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 text-text-main">
+                <div className="w-8 h-8 bg-slate-50 rounded-lg flex items-center justify-center text-slate-400">
+                  <Briefcase size={16} />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-[10px] font-black text-text-muted uppercase tracking-widest">Profession</span>
+                  <span className="text-xs font-bold">{member.profession || 'Not Specified'}</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 text-text-main">
+                <div className="w-8 h-8 bg-slate-50 rounded-lg flex items-center justify-center text-slate-400">
+                  <Award size={16} />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-[10px] font-black text-text-muted uppercase tracking-widest">Organization</span>
+                  <span className="text-xs font-bold">{member.organization || 'Not Specified'}</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 text-text-main">
+                <div className="w-8 h-8 bg-slate-50 rounded-lg flex items-center justify-center text-slate-400">
+                  <MapPin size={16} />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-[10px] font-black text-text-muted uppercase tracking-widest">Location</span>
+                  <span className="text-xs font-bold">{member.location || 'Not Specified'}</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-3 text-text-main">
+                <div className="w-8 h-8 bg-slate-50 rounded-lg flex items-center justify-center text-slate-400">
+                  <Mail size={16} />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-[10px] font-black text-text-muted uppercase tracking-widest">Email Address</span>
+                  <span className="text-xs font-bold">{member.email}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {member.bio && (
+            <div className="mb-8">
+              <h4 className="text-[10px] font-black text-text-muted uppercase tracking-widest mb-3 ml-1">About</h4>
+              <div className="p-6 bg-slate-50 rounded-2xl border border-ui-border">
+                <p className="text-sm text-text-muted leading-relaxed italic">&quot;{member.bio}&quot;</p>
+              </div>
+            </div>
+          )}
+
+          {member.skills && member.skills.length > 0 && (
+            <div>
+              <h4 className="text-[10px] font-black text-text-muted uppercase tracking-widest mb-3 ml-1">Skills & Expertise</h4>
+              <div className="flex flex-wrap gap-2">
+                {member.skills.map(skill => (
+                  <span key={skill} className="px-4 py-2 bg-white border border-ui-border rounded-xl text-[10px] font-bold text-text-main">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
