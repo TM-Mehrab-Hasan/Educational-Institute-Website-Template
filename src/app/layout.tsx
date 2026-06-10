@@ -14,7 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Demo Model School & College | Excellence in Education",
+  title: {
+    template: "%s | Demo Model School & College",
+    default: "Demo Model School & College | Excellence in Education",
+  },
   description: "Official website of Demo Model School & College, Dhaka, Bangladesh. Providing quality education since 1995.",
   icons: {
     icon: [

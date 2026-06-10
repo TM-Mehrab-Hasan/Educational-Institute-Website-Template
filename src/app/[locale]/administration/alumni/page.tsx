@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useState } from 'react';
-import Image from 'next/image';
 import { useScrollReveal } from '@/lib/hooks';
 import { Award, ChevronRight, LogOut, X } from 'lucide-react';
-import { useAlumniAuth, Alumni } from '@/lib/AlumniAuthContext';
+import { useAlumniAuth } from '@/lib/AlumniAuthContext';
 import AlumniLoginForm from '@/components/alumni/AlumniLoginForm';
 import AlumniRegisterForm from '@/components/alumni/AlumniRegisterForm';
+import AlumniDashboard from '@/components/alumni/AlumniDashboard';
 import { cn } from '@/lib/utils';
 
 export default function AlumniPage() {
@@ -81,7 +81,7 @@ export default function AlumniPage() {
           {featuredAlumni.map((alumnus, i) => (
             <div key={i} className="bg-slate-50 rounded-[2.5rem] p-10 border border-ui-border relative group hover:bg-white hover:shadow-2xl transition-all duration-500">
               <div className="w-24 h-24 rounded-3xl overflow-hidden mb-8 border-4 border-white shadow-lg group-hover:scale-105 transition-transform mx-auto relative">
-                <Image src={alumnus.image} alt={alumnus.name} fill className="object-cover" />
+                <img src={alumnus.image} alt={alumnus.name} className="w-full h-full object-cover" />
               </div>
               <blockquote className="text-text-muted italic leading-relaxed mb-8 text-center text-sm">
                 &quot;{alumnus.quote}&quot;
@@ -110,32 +110,5 @@ export default function AlumniPage() {
         </div>
       )}
     </main>
-  );
-}
-
-// DASHBOARD_PLACEHOLDER
-function AlumniDashboard({ 
-  alumni, 
-  logout 
-}: { 
-  alumni: Alumni; 
-  logout: () => void; 
-  activeTab: string; 
-  setActiveTab: (tab: string) => void; 
-  getAllAlumni: () => Alumni[]; 
-}) {
-  return (
-    <div className="min-h-screen bg-slate-50 py-12 flex flex-col items-center justify-center">
-      <div className="bg-white p-8 rounded-2xl shadow-lg text-center max-w-md w-full">
-        <h2 className="text-2xl font-bold mb-2">Welcome, {alumni?.name || 'Alumnus'}!</h2>
-        <p className="text-gray-600 mb-8">Alumni dashboard is under construction.</p>
-        <button 
-          onClick={logout} 
-          className="px-6 py-2 bg-red-500 text-white font-semibold rounded-lg hover:bg-red-600 transition-colors w-full"
-        >
-          Logout
-        </button>
-      </div>
-    </div>
   );
 }
