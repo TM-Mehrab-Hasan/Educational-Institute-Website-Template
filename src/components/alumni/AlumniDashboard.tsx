@@ -530,7 +530,6 @@ function DonationsView({ alumni }: { alumni: Alumni }) {
                             }
                             fileName={`Receipt_${d.project.replace(/\s+/g, '_')}.pdf`}
                           >
-                            {/* @ts-expect-error renderer type mismatch */}
                             {({ loading }) => (
                               <button className="p-2 text-slate-300 hover:text-brand-primary hover:bg-white rounded-lg border border-transparent hover:border-ui-border transition-all">
                                 {loading ? <Clock size={16} className="animate-spin" /> : <Download size={16} />}

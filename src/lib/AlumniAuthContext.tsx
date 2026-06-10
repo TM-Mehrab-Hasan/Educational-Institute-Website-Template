@@ -30,6 +30,9 @@ export interface JobOpportunity {
   posted: string;
   postedBy: string; // Alumni ID
   description?: string;
+  location?: string;
+  requirements?: string;
+  link?: string;
 }
 
 interface AlumniAuthContextType {
