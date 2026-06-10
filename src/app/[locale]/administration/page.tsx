@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link } from '@/i18n/routing';
-import { ChevronRight, UserCog, GraduationCap, Briefcase, Building2, ShieldCheck, Mail } from 'lucide-react';
+import { ChevronRight, UserCog, GraduationCap, Briefcase, Building2, ShieldCheck, Mail, Users } from 'lucide-react';
 import { useLanguage } from '@/lib/LanguageContext';
 import { useScrollReveal } from '@/lib/hooks';
 
@@ -51,6 +51,16 @@ export default function AdministrationPage() {
       color: "bg-purple-100 text-purple-700 border-purple-200",
       gradient: "from-purple-500 to-violet-600",
       iconBg: "bg-purple-500"
+    },
+    {
+      id: 'alumni',
+      title: t('nav.alumni'),
+      desc: "Stay connected with your alma mater, network with fellow graduates, and support institutional growth.",
+      icon: Users,
+      href: "/administration/alumni",
+      color: "bg-rose-100 text-rose-700 border-rose-200",
+      gradient: "from-rose-500 to-pink-600",
+      iconBg: "bg-rose-500"
     }
   ];
 

@@ -10,6 +10,7 @@ import { routing } from '@/i18n/routing';
 import { LanguageProvider } from "@/lib/LanguageContext";
 import { NoticesProvider } from "@/lib/NoticesContext";
 import { GuardianAuthProvider } from "@/lib/GuardianAuthContext";
+import { AlumniAuthProvider } from "@/lib/AlumniAuthContext";
 
 export default async function RootLayout({
   children,
@@ -20,29 +21,35 @@ export default async function RootLayout({
 }) {
   const { locale } = await params;
 
+
   // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
+
   // Providing all messages to the client side
   const messages = await getMessages();
+
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <LanguageProvider>
         <NoticesProvider>
           <GuardianAuthProvider>
-            <Topbar />
-            <Navbar />
-            <main className="flex-grow">
-              {children}
-            </main>
-            <Footer />
-            <ScrollToTop />
+            <AlumniAuthProvider>
+              <Topbar />
+              <Navbar />
+              <main className="flex-grow">
+                {children}
+              </main>
+              <Footer />
+              <ScrollToTop />
+            </AlumniAuthProvider>
           </GuardianAuthProvider>
         </NoticesProvider>
       </LanguageProvider>
     </NextIntlClientProvider>
   );
 }
+

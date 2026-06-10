@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useState } from 'react';
-import { useRouter } from '@/i18n/routing';;
+import React, { useState, useEffect } from 'react';
+import { useRouter } from '@/i18n/routing';
 import { 
   User, Users, GraduationCap, CreditCard, 
   Clock, BarChart3, Calendar, Bell, 
   ChevronRight, ArrowRight, ShieldCheck,
   LayoutDashboard, UserCircle, LogOut,
-  TrendingUp, MessageSquare, ChevronDown, X, Star
+  TrendingUp, MessageSquare, X, Star
 } from 'lucide-react';
 import { useGuardianAuth } from '@/lib/GuardianAuthContext';
 import { Student } from '@/lib/student-types';
@@ -20,7 +20,7 @@ import GuardianReviewForm from './GuardianReviewForm';
 
 export default function GuardianDashboard() {
   const router = useRouter();
-  const { currentGuardian, logout, linkStudent } = useGuardianAuth();
+  const { currentGuardian, logout, linkStudent, markFeePaidForStudent, getStudentData } = useGuardianAuth();
   const [view, setView] = useState<'Dashboard' | 'Profile' | 'Feedback'>('Dashboard');
   const [showLinkModal, setShowLinkModal] = useState(false);
   const [linkID, setLinkID] = useState('');
@@ -182,10 +182,16 @@ export default function GuardianDashboard() {
               {currentGuardian.children.length > 0 ? (
                 <div className="space-y-10">
                   {currentGuardian.children.map((student) => (
-                    <StudentCard key={student.studentID} student={student} onTabChange={setActiveStudentTab} />
+                    <StudentCard 
+                      key={student.studentID} 
+                      student={student} 
+                      onTabChange={setActiveStudentTab}
+                      markFeePaidForStudent={markFeePaidForStudent}
+                      getStudentData={getStudentData}
+                    />
                   ))}
 
-                  {/* Sidebar Blocks - only show at bottom for Overview, or move them for other tabs if desired (handled within StudentCard now) */}
+                  {/* Sidebar Blocks - only show at bottom for Overview */}
                   {activeStudentTab === 'Overview' && (
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                       <div className="bg-white rounded-3xl p-8 border border-ui-border shadow-xl">
@@ -281,18 +287,24 @@ export default function GuardianDashboard() {
 
 type TabType = 'Overview' | 'Attendance' | 'Results' | 'Payments';
 
-function StudentCard({ student: initialStudent, onTabChange }: { student: Student, onTabChange?: (tab: TabType) => void }) {
+interface StudentCardProps {
+  student: Student;
+  onTabChange?: (tab: TabType) => void;
+  markFeePaidForStudent: (studentID: string, feeId: string) => void;
+  getStudentData: (studentID: string) => Student | null;
+}
+
+function StudentCard({ student: initialStudent, onTabChange, markFeePaidForStudent, getStudentData }: StudentCardProps) {
   const [activeTab, setActiveTab] = useState<TabType>('Overview');
-  const { markFeePaidForStudent, getStudentData } = useGuardianAuth();
-  const [student, setStudent] = React.useState(initialStudent);
+  const [student, setStudent] = useState(initialStudent);
   
   // Notify parent when tab changes
-  React.useEffect(() => {
+  useEffect(() => {
     onTabChange?.(activeTab);
   }, [activeTab, onTabChange]);
   
   // Fetch fresh student data whenever tab changes or component mounts
-  React.useEffect(() => {
+  useEffect(() => {
     const freshData = getStudentData(initialStudent.studentID);
     if (freshData) {
       setStudent(freshData);
@@ -350,7 +362,7 @@ function StudentCard({ student: initialStudent, onTabChange }: { student: Studen
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
               <DetailStat label="Attendance" value={`${attendance}%`} icon={Clock} />
-              <DetailStat label="Latest GPA" value={(records[0]?.gpa ?? 0).toFixed(2)} icon={TrendingUp} />
+              <DetailStat label="Latest GPA" value={(records[0]?.gpa ?? 0).toFixed(2).toString()} icon={TrendingUp} />
               <DetailStat label="Due Fees" value={`৳${pendingFees.toLocaleString()}`} icon={CreditCard} highlight={pendingFees > 0} />
               <DetailStat label="Rank/Standing" value={records[0] ? `#${records[0].position}` : 'N/A'} icon={BarChart3} />
             </div>
@@ -363,7 +375,10 @@ function StudentCard({ student: initialStudent, onTabChange }: { student: Studen
                   {pendingFees > 0 ? ` There are pending dues of ৳${pendingFees.toLocaleString()} that require attention.` : " All institutional fees are up to date."}
                 </p>
               </div>
-              <button className="shrink-0 flex items-center gap-2 px-6 py-3 bg-text-main text-white font-black text-xs uppercase tracking-widest rounded-xl hover:bg-black transition-all">
+              <button 
+                onClick={() => setActiveTab('Results')}
+                className="shrink-0 flex items-center gap-2 px-6 py-3 bg-text-main text-white font-black text-xs uppercase tracking-widest rounded-xl hover:bg-black transition-all"
+              >
                 Full Profile <ArrowRight size={16} />
               </button>
             </div>

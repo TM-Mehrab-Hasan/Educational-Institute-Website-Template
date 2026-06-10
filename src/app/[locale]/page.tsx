@@ -273,49 +273,54 @@ export default function Home() {
             </Link>
           </header>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <TestimonialCard
-              name={t('testimonial1.name')}
-              relation={t('testimonial1.relation')}
-              content={t('testimonial1.content')}
-              rating={5}
-            />
-            <TestimonialCard
-              name={t('testimonial2.name')}
-              relation={t('testimonial2.relation')}
-              content={t('testimonial2.content')}
-              rating={5}
-            />
-            <TestimonialCard
-              name={t('testimonial3.name')}
-              relation={t('testimonial3.relation')}
-              content={t('testimonial3.content')}
-              rating={4}
-            />
-          </div>
-
-          {dynamicReviews.length > 0 && (
-            <div className="mt-20 pt-20 border-t border-brand-primary/10">
-              <div className="flex items-center gap-4 mb-12 justify-center">
-                <div className="h-px bg-brand-primary/10 flex-grow max-w-[100px]"></div>
-                <h3 className="text-sm font-black text-brand-primary uppercase tracking-[0.3em] text-center">{t('home.community_reviews')}</h3>
-                <div className="h-px bg-brand-primary/10 flex-grow max-w-[100px]"></div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {dynamicReviews.map((review) => (
-                  <TestimonialCard
-                    key={review.id}
-                    name={review.guardianName}
-                    relation={review.relation}
-                    content={review.content}
-                    rating={review.rating}
-                  />
-                ))}
-              </div>
+          <div className="space-y-16">
+            {/* Row 1: Original Static Feedbacks */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <TestimonialCard
+                name={t('testimonial1.name')}
+                relation={t('testimonial1.relation')}
+                content={t('testimonial1.content')}
+                rating={5}
+              />
+              <TestimonialCard
+                name={t('testimonial2.name')}
+                relation={t('testimonial2.relation')}
+                content={t('testimonial2.content')}
+                rating={5}
+              />
+              <TestimonialCard
+                name={t('testimonial3.name')}
+                relation={t('testimonial3.relation')}
+                content={t('testimonial3.content')}
+                rating={4}
+              />
             </div>
-          )}
+
+            {/* Row 2: Dynamic Community Feedbacks */}
+            {dynamicReviews.length > 0 && (
+              <div className="pt-16 border-t border-brand-primary/5">
+                <div className="flex items-center gap-4 mb-12 justify-center">
+                  <div className="h-px bg-brand-primary/10 flex-grow max-w-[100px]"></div>
+                  <h3 className="text-[10px] font-black text-brand-primary uppercase tracking-[0.3em] text-center">{t('home.community_reviews')}</h3>
+                  <div className="h-px bg-brand-primary/10 flex-grow max-w-[100px]"></div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {dynamicReviews.slice(0, 3).map((review) => (
+                    <TestimonialCard
+                      key={review.id}
+                      name={review.guardianName}
+                      relation={review.relation}
+                      content={review.content}
+                      rating={review.rating}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </section>
+
     </div>
   );
 }
